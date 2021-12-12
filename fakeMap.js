@@ -1,6 +1,9 @@
 'use strict';
-let fakeForEach = function (arr, func) {
-  for (let i = 0; i < arr.length; i++) {
-    func(arr[i]);
-  }
-};
+
+let nums = [2, 13, 24, 56, 89];
+
+nums.forEach(function (el, i) {
+  nums[i] = el * 2;
+});
+
+console.log(nums);
